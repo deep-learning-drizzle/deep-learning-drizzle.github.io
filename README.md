@@ -4,7 +4,7 @@
 :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### Contents
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
  - ### Deep Learning (Deep Neural Networks)  [:arrow_heading_down:](https://github.com/kmario23/deep-learning-drizzle#tada-deep-learning-confetti_ball-balloon) 
  - ### Machine Learning Fundamentals  [:arrow_heading_down:](https://github.com/kmario23/deep-learning-drizzle#cupid-machine-learning-fundamentals-cyclone-boom)
  - ### Optimization for Machine Learning [:arrow_heading_down:](https://github.com/kmario23/deep-learning-drizzle#cupid-optimization-for-machine-learning-cyclone-boom)
@@ -17,8 +17,7 @@
  - ### Boot Camps or Summer Schools [:arrow_heading_down:](https://github.com/kmario23/deep-learning-drizzle#star2-boot-camps-or-summer-schools-maple_leaf) 
  - ### Bird's Eye view of Artificial (General) Intelligence [:arrow_heading_down:](https://github.com/kmario23/deep-learning-drizzle#bird-birds-eye-view-of-agi-eagle)
  
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ## :tada: Deep Learning :confetti_ball: :balloon: 
 
@@ -61,8 +60,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :cupid: Machine Learning Fundamentals :cyclone: :boom: 
 
@@ -81,8 +79,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :cupid: Optimization for Machine Learning :cyclone: :boom: 
 
@@ -99,8 +96,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :cupid: General Machine Learning :cyclone: :boom: 
 
@@ -135,8 +131,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :balloon: Reinforcement Learning :hotsprings: :video_game: 
 
@@ -160,8 +155,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :loudspeaker: Probabilistic Graphical Models - *(Foundation for Graph Neural Networks)* :sparkles: 
 
@@ -179,8 +173,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :hibiscus: Natural Language Processing - *(More Applied)* :cherry_blossom: :sparkling_heart: 
 
@@ -199,8 +192,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ###  :speaking_head: Automatic Speech Recognition :speech_balloon: :thought_balloon:
 
@@ -219,8 +211,7 @@
 
 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :fire: Modern Computer Vision :camera_flash: :movie_camera: 
 
@@ -244,8 +235,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :star2: Boot Camps or Summer Schools :maple_leaf:
 
@@ -273,8 +263,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents)
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### :bird: Bird's Eye view of A(G)I :eagle:
 
@@ -288,8 +277,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents)
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### To-Do :running:
 
@@ -311,8 +299,7 @@
 
 [Go to Contents :arrow_heading_up:](https://github.com/kmario23/deep-learning-drizzle#contents) 
 
--------------------------------------------------
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
 
 ### Contributions :pray:
 
@@ -324,4 +311,4 @@ Danke Sehr!
 
 ###  :gift_heart: :mortar_board: :mortar_board: :mortar_board: :mortar_board: :mortar_board: :mortar_board: :mortar_board: :mortar_board: :mortar_board::mortar_board: :gift_heart: 
 
--------------------------------------------------
+:heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign::heavy_minus_sign: :heavy_minus_sign: :heavy_minus_sign: 
