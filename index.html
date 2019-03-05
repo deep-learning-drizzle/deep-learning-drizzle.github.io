@@ -30,7 +30,8 @@
 
 
    .centerTable { margin: 0px auto; }
-   /* table of contents */
+
+   /* table of contents table*/
    #toc {
          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
          border-collapse: collapse;
@@ -74,6 +75,50 @@
    }
 
 
+  /* Machine Learning fundamentals table */
+   #mlfund {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;  /* adjust table width */
+   }
+   #mlfund td, #mlfund th {
+                     border: 1px solid black; 
+                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
+                     text-align: left;
+   }
+   #mlfund tr:nth-child(even){background-color: #f5f5f5;}
+   #mlfund tr:hover {background-color: #539a9a;}
+   #mlfund th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #539a9a;
+            color: white;
+   }
+
+  /* Optimization for Machine Learning table */
+   #opt4ml {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;  /* adjust table width */
+   }
+   #opt4ml td, #opt4ml th {
+                     border: 1px solid black; 
+                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
+                     text-align: left;
+   }
+   #opt4ml tr:nth-child(even){background-color: #f5f5f5;}
+   #opt4ml tr:hover {background-color: #539a9a;}
+   #opt4ml th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #539a9a;
+            color: white;
+   }
+
+
+
   </style>
 
 </head>
@@ -82,7 +127,7 @@
 
 <h1> <i class="em em-balloon"></i> <i class="em em-tada"></i> Deep Learning Drizzle <i class="em em-confetti_ball"></i> <i class="em em-balloon
 "></i> </h1><hr><p style="text-align:center"><i class="em em-books"></i> <a href="https://www.deeplearning.ai/hodl-geoffrey-hinton/ "style="text-decoration:none"><strong>"Read enough so you start developing intuitions and then trust your intuitions and go for it!"</strong> </a> <i class="em em-books"></i>  ​<br/>  Prof. Geoffrey Hinton, University of Toronto
-</p><a href="#contents" style="text-decoration:none"><h2>Contents
+</p><a href="index.html#contents" style="text-decoration:none"><h2>Contents
  </h2></a><table id="toc" class="centerTable">
 <thead>
 <tr>
@@ -144,7 +189,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><hr><a href="#dnns" style="text-decoration:none"><h2><i class="em em-tada"></i> Deep Learning (Deep Neural Networks) <i class="em em-confetti_ball"></i> <i class="em em-balloon"></i> 
+</table><br/> <br/><hr><a href="index.html#dnns" style="text-decoration:none"><h2><i class="em em-tada"></i> Deep Learning (Deep Neural Networks) <i class="em em-confetti_ball"></i> <i class="em em-balloon"></i> 
  </h2></a><table id="dldnn" style="text-decoration:none">
 <thead>
 <tr>
@@ -470,7 +515,219 @@
 <td></td>
 </tr>
 </tbody>
-</table>
+</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="em em-arrow_heading_up"></i></h5></a><hr><a href="#mlfund" style="text-decoration:none"><h2><i class="em em-cupid"></i> Machine Learning Fundamentals <i class="em em-cyclone"></i> <i class="em em-boom"></i> 
+ </h2></a><table id="mlfund" style="text-decoration:none">
+<thead>
+<tr>
+<th>S.No</th>
+<th>Course Name</th>
+<th>University/Instructor(s)</th>
+<th>Course Webpage</th>
+<th>Video Lectures</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><strong>Linear Algebra</strong></td>
+<td>Gilbert Strang, MIT</td>
+<td><a href="http://ocw.mit.edu/18-06SCF11" style="text-decoration:none">18.06 SC</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2011</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><strong>Probability Primer</strong></td>
+<td>Jeffrey Miller, Brown University</td>
+<td><code>mathematical monk</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2011</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><strong>Information Theory, Pattern Recognition, and Neural Networks</strong></td>
+<td>David Mackay, University of Cambridge</td>
+<td><a href="http://www.inference.org.uk/mackay/itprnn" style="text-decoration:none">ITPRNN</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLruBu5BI5n4aFpG32iMbdWoRVAA-Vcso6" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2012</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><strong>Probability and Statistics</strong></td>
+<td>Michel van Biezen</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLX2gX-ftPVXUWwTzAkOhBdhplvz0fByqV" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2015</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><strong>Linear Algebra: An in-depth Introduction</strong></td>
+<td>Pavel Grinfeld</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLlXfTHzgMRUKXD88IdzS14F4NxAZudSmv" style="text-decoration:none">Part-1</a> <br/> <a href="https://www.youtube.com/playlist?list=PLlXfTHzgMRULWJYthculb2QWEiZOkwTSU" style="text-decoration:none">Part-2</a>  <br/> <a href="https://www.youtube.com/playlist?list=PLlXfTHzgMRUIqYrutsFXCOmiqKUgOgGJ5" style="text-decoration:none">Part-3</a> <br/> <a href="https://www.youtube.com/playlist?list=PLlXfTHzgMRULZfrNCrrJ7xDcTjGr633mm" style="text-decoration:none">Part-4</a></td>
+<td>2015- 2017</td>
+</tr>
+<tr>
+<td>6.</td>
+<td><strong>Multivariable Calculus</strong></td>
+<td>Grant Sanderson, Khan Academy</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HC5feHa6Rc5c0wbRTx56nF7" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2016</td>
+</tr>
+<tr>
+<td>7.</td>
+<td><strong>Essence of Linear Algebra</strong></td>
+<td>Grant Sanderson</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2016</td>
+</tr>
+<tr>
+<td>8.</td>
+<td><strong>Essence of Calculus</strong></td>
+<td>Grant Sanderson</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2017-2018</td>
+</tr>
+<tr>
+<td>9.</td>
+<td><strong>Mathematics for Machine Learning</strong> (Linear Algebra, Calculus)</td>
+<td>David Dye, Samuel Cooper, and Freddie Page, IC-London</td>
+<td><a href="https://www.coursera.org/learn/linear-algebra-machine-learning" style="text-decoration:none">MML</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLmAuaUS7wSOP-iTNDivR0ANKuTUhEzMe4" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2018</td>
+</tr>
+<tr>
+<td>10.</td>
+<td><strong>Multivariable Calculus</strong></td>
+<td>S.K. Gupta and Sanjeev Kumar, IIT-Roorkee</td>
+<td><a href="https://nptel.ac.in/syllabus/111107108/" style="text-decoration:none">MVC</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLq-Gm0yRYwTiQtK374NzhFOcQkWmJ71vx" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2018</td>
+</tr>
+<tr>
+<td>11.</td>
+<td><strong>Engineering Probability</strong></td>
+<td>Rich Radke, Rensselaer Polytechnic Institute</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLuh62Q4Sv7BU1dN2G6ncyiMbML7OXh_Jx" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2018</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="em em-arrow_heading_up"></i></h5></a><hr><a href="#opt4ml" style="text-decoration:none"><h2><i class="em em-cupid"></i> Optimization for Machine Learning <i class="em em-cyclone"></i> <i class="em em-boom"></i> 
+ </h2></a><table id="opt4ml" style="text-decoration:none">
+<thead>
+<tr>
+<th>S.No</th>
+<th>Course Name</th>
+<th>University/Instructor(s)</th>
+<th>Course Webpage</th>
+<th>Video Lectures</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td><strong>Convex Optimization</strong></td>
+<td>Stephen Boyd, Stanford University</td>
+<td><a href="http://web.stanford.edu/class/ee364a/lectures.html" style="text-decoration:none">ee364a</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PL3940DD956CDF0622" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2008</td>
+</tr>
+<tr>
+<td>2.</td>
+<td><strong>Introduction to Optimization</strong></td>
+<td>Michael Zibulevsky, Technion</td>
+<td><a href="https://sites.google.com/site/michaelzibulevsky/optimization-course" style="text-decoration:none">CS-236330</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLDFB2EEF4DDAFE30B" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2009</td>
+</tr>
+<tr>
+<td>3.</td>
+<td><strong>Optimization for Machine Learning</strong></td>
+<td>S V N Vishwanathan, Purdue University</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PL09B0E8AFC69BE108" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2011</td>
+</tr>
+<tr>
+<td>4.</td>
+<td><strong>Optimization</strong></td>
+<td>Geoff Gordon &amp; Ryan Tibshirani, CMU</td>
+<td><a href="https://www.cs.cmu.edu/~ggordon/10725-F12/" style="text-decoration:none">10-725</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PL7y-1rk2cCsDOv91McLOnV4kExFfTB7dU" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2012</td>
+</tr>
+<tr>
+<td>5.</td>
+<td><strong>Convex Optimization</strong></td>
+<td>Joydeep Dutta, IIT-Kanpur</td>
+<td><a href="https://nptel.ac.in/syllabus/111104068/" style="text-decoration:none">cvx-nptel</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLbMVogVj5nJQHFqfiSdgaLCCWvDcm1W4l" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2013</td>
+</tr>
+<tr>
+<td>6.</td>
+<td><strong>Algorithmic Aspects of Machine Learning</strong></td>
+<td>Ankur Moitra, MIT</td>
+<td><a href="http://people.csail.mit.edu/moitra/409.html" style="text-decoration:none">18.409-AAML</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLB3sDpSRdrOvI1hYXNsa6Lety7K8FhPpx" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>S2015</td>
+</tr>
+<tr>
+<td>7.</td>
+<td><strong>Advanced Algorithms</strong></td>
+<td>Ankur Moitra, MIT</td>
+<td><a href="http://people.csail.mit.edu/moitra/854.html" style="text-decoration:none">6.854-AA</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>S2016</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Introduction to Optimization</strong></td>
+<td>Michael Zibulevsky, Technion</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLBD31626529B0AC2A" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2016</td>
+</tr>
+<tr>
+<td>9.</td>
+<td><strong>Convex Optimization</strong></td>
+<td>Ryan Tibshirani, CMU</td>
+<td><a href="https://www.stat.cmu.edu/~ryantibs/convexopt/" style="text-decoration:none">cvx-opt</a></td>
+<td><a href="https://www.youtube.com/playlist?list=PLpIxOj-HnDsMM7BCNGC3hPFU3DfCWfVIw" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>F2018</td>
+</tr>
+<tr>
+<td>10.</td>
+<td><strong>Modern Algorithmic Optimization</strong></td>
+<td>Yurii Nesterov, UCLouvain</td>
+<td><code>None</code></td>
+<td><a href="https://www.youtube.com/playlist?list=PLEqoHzpnmTfAoUDqnmMly-KgyJ6ZM_axf" style="text-decoration:none">YouTube-Lectures</a></td>
+<td>2018</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="em em-arrow_heading_up"></i></h5></a><hr>
 <a href="https://github.com/kmario23/deep-learning-drizzle" class="github">
    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
 </a>
@@ -480,10 +737,10 @@
 
 <p class="text_center">
    <!-- to get the counts, watch, and forks from github repository, using http://ghbtns.com/ -->
-   <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="24px"></iframe>
+   <!-- <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="24px"></iframe> -->
    Made with <span class = "heart"> <strong>❤</strong> </span> in <b>S</b>aarland <b>I</b>nformatics <b>C</b>ampus &nbsp; &nbsp;
-   <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="24px"></iframe>
-   <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170px" height="24px"></iframe>
+   <!-- <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="170px" height="24px"></iframe> -->
+   <!-- <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170px" height="24px"></iframe> -->
 </p>
 
 </html>
