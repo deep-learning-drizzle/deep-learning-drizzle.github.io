@@ -140,6 +140,38 @@ def add_navigation_button():
     return pret
 
 
+def replace_github_url_with_webpage_url(line, matches):
+    for lnk in matches:
+        lnk = lnk.replace('(', '')
+        lnk = lnk.replace(')', '')
+        if "deep-learning-deep-neural-networks" in line:
+            line = line.replace(lnk, host_url + host_page + divdnns)
+        if "probabilistic-graphical-models" in line:
+            line = line.replace(lnk, host_url + host_page + divpgm)
+        if "machine-learning-fundamentals" in line:
+            line = line.replace(lnk, host_url + host_page + divmlfund)
+        if "natural-language-processing" in line:
+            line = line.replace(lnk, host_url + host_page + divnlp)
+        if "optimization-for-machine-learning" in line:
+            line = line.replace(lnk, host_url + host_page + divopt4ml)
+        if "automatic-speech-recognition-speech" in line:
+            line = line.replace(lnk, host_url + host_page + divasr)
+        if "general-machine-learning" in line:
+            line = line.replace(lnk, host_url + host_page + divgenml)
+        if "modern-computer-vision" in line:
+            line = line.replace(lnk, host_url + host_page + divcvnn)
+        if "reinforcement-learning" in line:
+            line = line.replace(lnk, host_url + host_page + divreinf)
+        if "boot-camps-or-summer-schools" in line:
+            line = line.replace(lnk, host_url + host_page + divbcss)
+        if "graph-neural-networks" in line:
+            line = line.replace(lnk, host_url + host_page + divgnn)
+        if "birds-eye-view-of-agi" in line:
+            line = line.replace(lnk, host_url + host_page + divagi)
+
+    return line
+
+
 # desired html
 with open('index.html', 'w') as f:
     # write header info
@@ -211,7 +243,8 @@ with open('index.html', 'w') as f:
         if "| " in line and heavy_minus_tracker == 2:
             line = line.replace(down_arrow, down_arrow_prettified)
             extr = parse_markdown_url(line)
-            # print(extr)
+            matches = re.findall(r"\(https.*?\)", line)
+            line = replace_github_url_with_webpage_url(line, matches)
             table_of_contents.append(line)
 
         # signifies end of table; now convert them to html table
