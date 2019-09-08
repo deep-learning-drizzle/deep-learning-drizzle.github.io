@@ -62,6 +62,8 @@ divmlfund = '#mlfund'
 divopt4ml = '#opt4ml'
 divgenml = '#genml'
 divreinf = '#reinf'
+divbdl = '#bayesdl'
+divmi = '#medimg'
 divpgm = '#probgm'
 divgnn = '#graphnn'
 divnlp = '#nlpnn'
@@ -148,6 +150,10 @@ def replace_github_url_with_webpage_url(line, matches):
             line = line.replace(lnk, host_url + host_page + divdnns)
         if "probabilistic-graphical-models" in line:
             line = line.replace(lnk, host_url + host_page + divpgm)
+        if "bayesian-deep-learning" in line:
+            line = line.replace(lnk, host_url + host_page + divbdl)
+        if "medical-imaging" in line:
+            line = line.replace(lnk, host_url + host_page + divmi)
         if "machine-learning-fundamentals" in line:
             line = line.replace(lnk, host_url + host_page + divmlfund)
         if "natural-language-processing" in line:
@@ -185,6 +191,8 @@ with open('index.html', 'w') as f:
     opt_ml = []
     gen_ml = []
     reinf_learn = []
+    bayes_dl = []
+    med_img = []
     prob_gm = []
     graph_nn = []
     nlp_nn = []
@@ -418,6 +426,60 @@ with open('index.html', 'w') as f:
             all_lines.append(add_navigation_button())
             all_lines.append("<hr>")
 
+        # BAYESIAN DEEP LEARNING TABLE
+        # Bayesian Deep Learning
+        if "## :game_die: Bayesian" in line:
+            line = line.replace('## ', '')
+            line = table_topic_emoji_processor(line)
+            line = ahref1 + divbdl + ahrefm + h2b + line + h2e + ahref2
+            # print(line)
+            all_lines.append(line)
+
+        # group Bayesian Deep Learning table in a list and then process them
+        if "| " in line and heavy_minus_tracker == 16:
+            bayes_dl.append(line)
+
+        # signifies end of table; now convert them to html table
+        if heavy_minus_tracker == 17:
+            # convert bayes deep learn markdown to html table
+            bayes_dl_html = markdown.markdown("".join(bayes_dl), extensions=['markdown.extensions.tables'])
+            bayes_dl_html = bayes_dl_html.replace('<table>', '<table id="bayesdl">')  # center align table
+            # remove underline in url links
+            reinf_learn_html = bayes_dl_html.replace('">', '" style="text-decoration:none">')
+            # print(bayes_dl_html)
+            all_lines.append(bayes_dl_html)
+
+            # navigation to top
+            all_lines.append(add_navigation_button())
+            all_lines.append("<hr>")
+
+        # MEDICAL IMAGING TABLE
+        # Medical Imaging
+        if "## :movie_camera: Medical" in line:
+            line = line.replace('## ', '')
+            line = table_topic_emoji_processor(line)
+            line = ahref1 + divmi + ahrefm + h2b + line + h2e + ahref2
+            # print(line)
+            all_lines.append(line)
+
+        # group Medical Imaging table in a list and then process them
+        if "| " in line and heavy_minus_tracker == 18:
+            med_img.append(line)
+
+        # signifies end of table; now convert them to html table
+        if heavy_minus_tracker == 19:
+            # convert medical imaging markdown to html table
+            med_img_html = markdown.markdown("".join(med_img), extensions=['markdown.extensions.tables'])
+            med_img_html = med_img_html.replace('<table>', '<table id="medimg">')  # center align table
+            # remove underline in url links
+            med_img_html = med_img_html.replace('">', '" style="text-decoration:none">')
+            # print(med_img_html)
+            all_lines.append(med_img_html)
+
+            # navigation to top
+            all_lines.append(add_navigation_button())
+            all_lines.append("<hr>")
+
         # GRAPH NEURAL NETWORKS TABLE
         # Graph Neural Networks
         if "## :tada: Graph Neural Networks" in line:
@@ -428,11 +490,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Graph Neural Networks table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 16:
+        if "| " in line and heavy_minus_tracker == 20:
             graph_nn.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 17:
+        if heavy_minus_tracker == 21:
             # convert Graph Neural Networks markdown to html table
             graph_nn_html = markdown.markdown("".join(graph_nn), extensions=['markdown.extensions.tables'])
             graph_nn_html = graph_nn_html.replace('<table>', '<table id="graphnn">')  # center align table
@@ -455,11 +517,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Natural Language Processing table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 18:
+        if "| " in line and heavy_minus_tracker == 22:
             nlp_nn.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 19:
+        if heavy_minus_tracker == 23:
             # convert Graph Neural Networks markdown to html table
             nlp_nn_html = markdown.markdown("".join(nlp_nn), extensions=['markdown.extensions.tables'])
             nlp_nn_html = nlp_nn_html.replace('<table>', '<table id="nlpnn">')  # center align table
@@ -482,11 +544,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Automatic Speech Recognition table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 20:
+        if "| " in line and heavy_minus_tracker == 24:
             asr_nn.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 21:
+        if heavy_minus_tracker == 25:
             # convert Automatic Speech Recognition markdown to html table
             asr_nn_html = markdown.markdown("".join(asr_nn), extensions=['markdown.extensions.tables'])
             asr_nn_html = asr_nn_html.replace('<table>', '<table id="asrnn">')  # center align table
@@ -509,11 +571,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Modern Computer Vision table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 22:
+        if "| " in line and heavy_minus_tracker == 26:
             cv_nn.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 23:
+        if heavy_minus_tracker == 27:
             # convert Modern Computer Vision markdown to html table
             cv_nn_html = markdown.markdown("".join(cv_nn), extensions=['markdown.extensions.tables'])
             cv_nn_html = cv_nn_html.replace('<table>', '<table id="cvnn">')  # center align table
@@ -536,11 +598,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Boot Camps or Summer Schools table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 24:
+        if "| " in line and heavy_minus_tracker == 28:
             bcss.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 25:
+        if heavy_minus_tracker == 29:
             # convert Boot Camps or Summer Schools markdown to html table
             bcss_html = markdown.markdown("".join(bcss), extensions=['markdown.extensions.tables'])
             bcss_html = bcss_html.replace('<table>', '<table id="bcss">')  # center align table
@@ -563,11 +625,11 @@ with open('index.html', 'w') as f:
             all_lines.append(line)
 
         # group Bird's Eye view of A(G)I table in a list and then process them
-        if "| " in line and heavy_minus_tracker == 26:
+        if "| " in line and heavy_minus_tracker == 30:
             agi_nn.append(line)
 
         # signifies end of table; now convert them to html table
-        if heavy_minus_tracker == 27:
+        if heavy_minus_tracker == 31:
             # convert Bird's Eye view of A(G)I markdown to html table
             agi_nn_html = markdown.markdown("".join(agi_nn), extensions=['markdown.extensions.tables'])
             agi_nn_html = agi_nn_html.replace('<table>', '<table id="aginn">')  # center align table

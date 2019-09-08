@@ -162,6 +162,52 @@
             color: white;
    }
 
+
+  /* Bayesian Deep Learning table */
+   #bayesdl {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;  /* adjust table width */
+   }
+   #bayesdl td, #bayesdl th {
+                     border: 1px solid black; 
+                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
+                     text-align: left;
+   }
+   #bayesdl tr:nth-child(even){background-color: #f5f5f5;}
+   #bayesdl tr:hover {background-color: #539a9a;}
+   #bayesdl th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #539a9a;
+            color: white;
+   }
+
+
+  /* Medical Imaging table */
+   #medimg {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;  /* adjust table width */
+   }
+   #medimg td, #medimg th {
+                     border: 1px solid black; 
+                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
+                     text-align: left;
+   }
+   #medimg tr:nth-child(even){background-color: #f5f5f5;}
+   #medimg tr:hover {background-color: #539a9a;}
+   #medimg th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #539a9a;
+            color: white;
+   }
+
+
+
   /* Probabilistic Graphical Models */
    #probgm {
          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
