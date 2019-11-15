@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <title>Deep Learning Drizzle</title>
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link href="https://emoji.tryhtml.org/emoji.css" rel="stylesheet">
 
   <style>
     h1{
