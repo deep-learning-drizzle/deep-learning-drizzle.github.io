@@ -16,6 +16,14 @@ with open('html_head.txt', 'r') as f:
 with open('html_foot.txt', 'r') as f:
     html_foot = f.readlines()
 
+# read some fontawesome stuff for html
+with open('fontawesome-animations.txt', 'r') as f:
+    fontawesome_animations = []
+    for line in f:
+        line = line.strip().replace('BEG:', '')
+        line = line.strip().replace('END:', '')
+        fontawesome_animations.append(line)
+
 # to color code the emojies
 em1 = '<i class="em em-'
 em2 = '"></i>'
@@ -217,7 +225,7 @@ with open('index.html', 'w') as f:
                         temp.append(w)
                 line = " ".join(temp)
                 del temp
-                line = h1b + line + h1e
+                line = h1b + fontawesome_animations[0] + line + fontawesome_animations[1] + h1e
                 all_lines.append(line)
                 # line separator
                 all_lines.append('<hr>')
