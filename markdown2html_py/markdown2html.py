@@ -87,7 +87,7 @@ def prettify_emoji(word):
 
 # down arrow
 down_arrow = ":arrow_heading_down:"
-down_arrow_prettified = prettify_emoji("arrow_heading_down")
+down_arrow_prettified = '<i class="fas fa-circle-down toc-arrow toc-arrow-down"></i>'
 
 # up arrow
 up_arrow = ":arrow_heading_up:"
@@ -145,7 +145,7 @@ def add_navigation_button():
     """
     adds a go to contents button
     """
-    pret = prettify_emoji("arrow_heading_up")
+    pret = '<i class="fas fa-circle-up toc-arrow"></i>'
     pret = url1 + host_url + host_page + divcont + url2 + h5b + g2c + pret + h5e + url3
     return pret
 
@@ -249,11 +249,10 @@ with open('index.html', 'w') as f:
 
         # table of contents
         if "### Contents" in line:
-            line = line.replace('### ', '')
-            line = '<div id="contents"> ' + ahref1 + host_page + divcont + ahrefm + h2b + line + h2e + ahref2
-            line = line + ' </div>'
-            # print(line)
-            all_lines.append(line)
+            # The "Contents" title is now rendered inside the TOC table's header row
+            # (see the heavy_minus_tracker == 3 block below); the #contents jump-anchor
+            # is placed on the div wrapping that table. So nothing is emitted here.
+            pass
 
         # group toc in a list and then process them
         if "| " in line and heavy_minus_tracker == 2:
@@ -268,6 +267,12 @@ with open('index.html', 'w') as f:
             # convert toc markdown to html table
             toc_html = markdown.markdown("".join(table_of_contents), extensions=['markdown.extensions.tables'])
             toc_html = toc_html.replace('<table>', '<table id="toc" class="centerTable">')  # center align table
+            # put the "Contents" title inside the (otherwise empty) table header, spanning both columns
+            toc_html = re.sub(r'<thead>.*?</thead>',
+                              '<thead><tr><th colspan="2" class="toc-title">Contents</th></tr></thead>',
+                              toc_html, flags=re.DOTALL)
+            # keep the #contents jump-anchor by wrapping the table
+            toc_html = '<div id="contents">' + toc_html + '</div>'
             all_lines.append(toc_html)
             all_lines.append('<br/> <br/>')
             all_lines.append('<hr>')

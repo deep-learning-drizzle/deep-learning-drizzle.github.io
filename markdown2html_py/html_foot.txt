@@ -1,7 +1,7 @@
 
-<a href="https://github.com/kmario23/deep-learning-drizzle" class="github">
-   <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
-</a>
+<div class="github-ribbon">
+   <a href="https://github.com/kmario23/deep-learning-drizzle" target="_blank" rel="noopener">Fork me on <i class="fab fa-github"></i></a>
+</div>
 
 </body>
 <hr style="background-color:#E02461">
@@ -10,9 +10,50 @@
    <!-- to get the counts, watch, and forks from github repository, using http://ghbtns.com/ -->
     <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=star&count=true" frameborder="0" scrolling="0" width="110px" height="17px"></iframe>
     Made with <i class='fas fa-heart faa-pulse faa-fast animated' style='font-size:23px;color:crimson'></i> and maintained by 
-    <a href="https://github.com/kmario23" style="text-decoration:none"> @kmario23</a>, <b>S</b>aarland <b>I</b>nformatics <b>C</b>ampus &nbsp;
+    <a href="https://github.com/kmario23" style="text-decoration:none"> @kmario23</a>, <b>S</b>aarland <b>I</b>nformatics <b>C</b>ampus, Saarland, Germany <i class="em em-flag-de"></i> &nbsp;
     <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=fork&count=true" frameborder="0" scrolling="0" width="110px" height="17px"></iframe> 
 <iframe src="https://ghbtns.com/github-btn.html?user=kmario23&repo=deep-learning-drizzle&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="110px" height="17px"></iframe>
 </p>
+
+<script>
+  // Open all external links in a new tab (same-page/internal anchors are left alone),
+  // and tag them so a subtle "external" cue can be shown outside the tables.
+  (function () {
+    // Hosts that count as "this site" (current host + the canonical domain),
+    // so the internal "Go to Contents" / section links are never treated as external
+    // even when the page is opened locally or from a mirror.
+    var internalHosts = [location.hostname, 'deep-learning-drizzle.github.io'];
+    var links = document.querySelectorAll('a[href]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      var href = a.getAttribute('href') || '';
+      if (!/^https?:\/\//i.test(href)) continue;   // skip #anchors, mailto:, relative
+      var url;
+      try { url = new URL(href, location.href); } catch (e) { continue; }
+      if (!url.hostname || internalHosts.indexOf(url.hostname) !== -1) continue;
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+      a.classList.add('external');
+    }
+  })();
+
+  // Dark / light theme toggle (initial theme is set in <head> to avoid a flash).
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function sync() {
+      var t = document.documentElement.getAttribute('data-theme') || 'light';
+      btn.textContent = (t === 'dark') ? '☀️' : '🌙';
+    }
+    sync();
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme') || 'light';
+      var next = (cur === 'dark') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    });
+  })();
+</script>
 
 </html>

@@ -6,364 +6,227 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-  <link href="https://emoji.tryhtml.org/emoji.css" rel="stylesheet">
+  <!-- <link href="https://emoji.tryhtml.org/emoji.css" rel="stylesheet"> -->
 
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://kit.fontawesome.com/84bad70f4c.js" crossorigin="anonymous"></script>
   <!-- fontawesome animation (local copy)-->
   <link href="./font-awesome/css/font-awesome-animation.min.css" rel="stylesheet">
 
   <title>Deep Learning Drizzle</title>
+
+  <!-- Set theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
   <style>
-    h1{
-       text-align: center;
+    /* ============ Theme tokens ============ */
+    :root {
+      --bg: #E5E0DF;
+      --surface: #ffffff;
+      --text: #1f2328;
+      --muted: #57606a;
+      --header-bg: #539a9a;
+      --header-text: #ffffff;
+      --row-alt: #f6f8f8;
+      --row-hover: rgba(83, 154, 154, 0.14);
+      --border: #e4e2df;
+      --accent: #E02461;
+      --link: #17696b;
+      --link-hover: #E02461;
+      --hr: #DBA345;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f1419;
+      --surface: #171b21;
+      --text: #e6e6e6;
+      --muted: #9aa4ad;
+      --header-bg: #2c6f6f;
+      --header-text: #eafafa;
+      --row-alt: #1c2129;
+      --row-hover: rgba(95, 201, 203, 0.12);
+      --border: #2a313b;
+      --accent: #ff5c8a;
+      --link: #5fc9cb;
+      --link-hover: #ff7ba5;
+      --hr: #DBA345;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 10px 28px rgba(0, 0, 0, 0.45);
     }
 
-    body{
-         background-color: #E5E0DF;
+    html { scroll-behavior: smooth; }
+
+    h1 { text-align: center; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-    .heart{
-           color:#e25555;
-          }
-    .text_center {text-align: center;}
 
-    hr{
-       height: 2px;
-       color: #DBA345;
-       background-color: #DBA345;
-       border: none;
-     }
+    a { color: var(--link); }
+    a:hover { color: var(--link-hover); }
 
-   /* DIV ids for all tables' title */
-   #contents {color: red;}
+    /* Contents / back-to-top navigation arrows */
+    .toc-arrow {
+      color: var(--accent);
+      margin-left: 5px;
+      transition: transform 0.2s ease;
+    }
+    a:hover .toc-arrow { transform: translateY(-2px); }
+    a:hover .toc-arrow-down { transform: translateY(2px); }
 
-   .centerTable { margin: 0px auto; }
+    .heart { color: #e25555; }
+    .text_center { text-align: center; }
 
-   /* table of contents table*/
-   #toc {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 50%;  /* adjust table width */
-   }
-   #toc td, #toc th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #toc tr:nth-child(even){background-color: #f5f5f5;}
-   #toc tr:hover {background-color: #539a9a;}
-   #toc th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    hr {
+      height: 2px;
+      color: var(--hr);
+      background-color: var(--hr);
+      border: none;
+    }
 
+    #contents { text-align: center; }
 
-   /* deep learning or deep neural networks table */
-   #dldnn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #dldnn td, #dldnn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #dldnn tr:nth-child(even){background-color: #f5f5f5;}
-   #dldnn tr:hover {background-color: #539a9a;}
-   #dldnn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    /* Section topic titles: centered, with an underline rule below */
+    h2 {
+      text-align: center;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--header-bg);
+    }
 
+    /* "Go to Contents" back-to-top link: pushed to the right */
+    h5 {
+      text-align: right;
+      margin-right: 6px;
+    }
 
-  /* Machine Learning fundamentals table */
-   #mlfund {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #mlfund td, #mlfund th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #mlfund tr:nth-child(even){background-color: #f5f5f5;}
-   #mlfund tr:hover {background-color: #539a9a;}
-   #mlfund th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    .centerTable { margin: 0px auto; }
 
-  /* Optimization for Machine Learning table */
-   #opt4ml {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #opt4ml td, #opt4ml th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #opt4ml tr:nth-child(even){background-color: #f5f5f5;}
-   #opt4ml tr:hover {background-color: #539a9a;}
-   #opt4ml th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    /* ============ Unified table styling ============ */
+    /* (previously 15 identical per-id blocks; now one rule for every generated table) */
+    table[id] {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      margin: 0 auto 10px;
+      background-color: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      font-family: inherit;
+    }
+    #toc { width: 50%; }
 
+    table[id] td, table[id] th {
+      padding: 10px 18px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    table[id] tbody tr:last-child td { border-bottom: none; }
 
-  /* General Machine Learning table */
-   #genml {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #genml td, #genml th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #genml tr:nth-child(even){background-color: #f5f5f5;}
-   #genml tr:hover {background-color: #539a9a;}
-   #genml th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    table[id] tbody tr:nth-child(even) { background-color: var(--row-alt); }
+    table[id] tbody tr:hover { background-color: var(--row-hover); }
 
+    /* Sticky, themed header (no overflow:hidden on the table, so sticky keeps working) */
+    table[id] th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      border-bottom: none;
+    }
+    table[id] th:first-child { border-top-left-radius: 10px; }
+    table[id] th:last-child { border-top-right-radius: 10px; }
 
-  /* Reinforcement Learning table */
-   #reinf {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #reinf td, #reinf th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #reinf tr:nth-child(even){background-color: #f5f5f5;}
-   #reinf tr:hover {background-color: #539a9a;}
-   #reinf th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    /* TOC "Contents" title: single header cell spanning the whole table */
+    table[id] th.toc-title {
+      text-align: center;
+      font-size: 1.15em;
+      letter-spacing: 0.5px;
+    }
 
+    /* Links inside tables: color + hover underline, no permanent underline */
+    table[id] a { color: var(--link); text-decoration: none; }
+    table[id] a:hover { color: var(--link-hover); text-decoration: underline; }
 
-  /* Bayesian Deep Learning table */
-   #bayesdl {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #bayesdl td, #bayesdl th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #bayesdl tr:nth-child(even){background-color: #f5f5f5;}
-   #bayesdl tr:hover {background-color: #539a9a;}
-   #bayesdl th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
+    /* ============ Dark / light toggle ============ */
+    #theme-toggle {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 10000;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+    }
+    #theme-toggle:hover { transform: scale(1.08); }
+    #theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-
-  /* Medical Imaging table */
-   #medimg {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #medimg td, #medimg th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #medimg tr:nth-child(even){background-color: #f5f5f5;}
-   #medimg tr:hover {background-color: #539a9a;}
-   #medimg th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-
-
-  /* Probabilistic Graphical Models */
-   #probgm {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #probgm td, #probgm th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #probgm tr:nth-child(even){background-color: #f5f5f5;}
-   #probgm tr:hover {background-color: #539a9a;}
-   #probgm th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Graph Neural Networks */
-   #graphnn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #graphnn td, #graphnn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #graphnn tr:nth-child(even){background-color: #f5f5f5;}
-   #graphnn tr:hover {background-color: #539a9a;}
-   #graphnn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Natural Language Processing */
-  #nlpnn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #nlpnn td, #nlpnn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #nlpnn tr:nth-child(even){background-color: #f5f5f5;}
-   #nlpnn tr:hover {background-color: #539a9a;}
-   #nlpnn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Automatic Speech Recognition */
-  #asrnn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #asrnn td, #asrnn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #asrnn tr:nth-child(even){background-color: #f5f5f5;}
-   #asrnn tr:hover {background-color: #539a9a;}
-   #asrnn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Modern Computer Vision */
-  #cvnn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #cvnn td, #cvnn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #cvnn tr:nth-child(even){background-color: #f5f5f5;}
-   #cvnn tr:hover {background-color: #539a9a;}
-   #cvnn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Boot Camps or Summer Schools */
-  #bcss {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #bcss td, #bcss th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #bcss tr:nth-child(even){background-color: #f5f5f5;}
-   #bcss tr:hover {background-color: #539a9a;}
-   #bcss th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-  /* Bird's Eye-view of A(G)I */
-  #aginn {
-         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-         border-collapse: collapse;
-         width: 100%;  /* adjust table width */
-   }
-   #aginn td, #aginn th {
-                     border: 1px solid black; 
-                     padding: 5px 10px 5px 20px;  /* top, right, bottom, left */
-                     text-align: left;
-   }
-   #aginn tr:nth-child(even){background-color: #f5f5f5;}
-   #aginn tr:hover {background-color: #539a9a;}
-   #aginn th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #539a9a;
-            color: white;
-   }
-
-</style>
+    /* ============ "Fork me on GitHub" ribbon ============ */
+    .github-ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 149px;
+      height: 149px;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    .github-ribbon a {
+      position: absolute;
+      display: block;
+      top: 33px;
+      right: -46px;
+      width: 200px;
+      padding: 6px 0;
+      transform: rotate(45deg);
+      text-align: center;
+      font: 700 13px/1.2 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 0.5px;
+      color: #fff;
+      background-color: var(--accent);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+    }
+    .github-ribbon a::before,
+    .github-ribbon a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+    }
+    .github-ribbon a::before { top: 2px; }
+    .github-ribbon a::after { bottom: 2px; }
+  </style>
 
 </head>
 
 <body>
+
+<button id="theme-toggle" type="button" aria-label="Toggle dark / light mode" title="Toggle dark / light mode">🌙</button>
 
