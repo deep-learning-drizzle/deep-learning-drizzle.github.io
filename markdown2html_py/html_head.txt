@@ -62,7 +62,8 @@
 
     html { scroll-behavior: smooth; }
 
-    h1 { text-align: center; }
+    /* Extra top room so the full-size corner ribbon clears the gold divider below the header */
+    h1 { text-align: center; margin-top: 46px; }
 
     body {
       background-color: var(--bg);
@@ -101,7 +102,7 @@
       text-align: center;
       padding-bottom: 8px;
       margin-bottom: 12px;
-      border-bottom: 2px solid var(--header-bg);
+      border-bottom: 2px solid var(--hr);
     }
 
     /* "Go to Contents" back-to-top link: pushed to the right */
@@ -119,6 +120,8 @@
       border-spacing: 0;
       width: 100%;
       margin: 0 auto 10px;
+      /* When jumped to via #anchor, rest below the section title so it stays visible */
+      scroll-margin-top: 90px;
       background-color: var(--surface);
       color: var(--text);
       border: 1px solid var(--border);

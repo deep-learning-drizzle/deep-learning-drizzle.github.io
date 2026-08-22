@@ -33,8 +33,10 @@ ahref1 = '<a href="'
 ahrefm = '" style="text-decoration:none">'
 ahref2 = '</a>'
 
-host_url = "https://deep-learning-drizzle.github.io/"
-host_page = "index.html"
+# Navigation uses bare in-page fragment links (e.g. "#contents", "#reinf") so the
+# URL stays clean on click -- no hardcoded domain and no literal index.html.
+host_url = ""
+host_page = ""
 
 # heading size 1
 h1b = "<h1> "
@@ -53,7 +55,7 @@ lb_html = '<br/>'
 
 # html url construction
 url1 = '<a href="'
-url2 = ' "style="text-decoration:none">'
+url2 = '" style="text-decoration:none">'
 url3 = '</a>'
 
 # center align something

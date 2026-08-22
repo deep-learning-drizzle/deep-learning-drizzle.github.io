@@ -62,7 +62,8 @@
 
     html { scroll-behavior: smooth; }
 
-    h1 { text-align: center; }
+    /* Extra top room so the full-size corner ribbon clears the gold divider below the header */
+    h1 { text-align: center; margin-top: 46px; }
 
     body {
       background-color: var(--bg);
@@ -101,7 +102,7 @@
       text-align: center;
       padding-bottom: 8px;
       margin-bottom: 12px;
-      border-bottom: 2px solid var(--header-bg);
+      border-bottom: 2px solid var(--hr);
     }
 
     /* "Go to Contents" back-to-top link: pushed to the right */
@@ -119,6 +120,8 @@
       border-spacing: 0;
       width: 100%;
       margin: 0 auto 10px;
+      /* When jumped to via #anchor, rest below the section title so it stays visible */
+      scroll-margin-top: 90px;
       background-color: var(--surface);
       color: var(--text);
       border: 1px solid var(--border);
@@ -230,68 +233,68 @@
 
 <button id="theme-toggle" type="button" aria-label="Toggle dark / light mode" title="Toggle dark / light mode">🌙</button>
 
-<h1> <i class='fab fa-jedi-order faa-pulse animated' style='font-size:40px;color:saddlebrown'></i> &nbsp;Deep Learning Drizzle &nbsp; <i class='fas fa-cloud-rain faa-passing animated' style='font-size:33px;color:dodgerblue'></i> <i class='fas fa-cloud-showers-heavy faa-passing animated' style='font-size:33px;color:dodgerblue'></i> <i class='fas fa-cloud-showers-heavy faa-passing animated' style='font-size:33px;color:dodgerblue'></i> </h1><hr><p style="text-align:center"><i class="em em-books"></i> <a href="https://www.deeplearning.ai/blog/hodl-geoffrey-hinton "style="text-decoration:none"><strong>"Read enough so you start developing intuitions and then trust your intuitions and go for it!"</strong> </a> <i class="em em-books"></i>  ​<br/>  Prof. Geoffrey Hinton, University of Toronto
+<h1> <i class='fab fa-jedi-order faa-pulse animated' style='font-size:40px;color:saddlebrown'></i> &nbsp;Deep Learning Drizzle &nbsp; <i class='fas fa-cloud-rain faa-passing animated' style='font-size:33px;color:dodgerblue'></i> <i class='fas fa-cloud-showers-heavy faa-passing animated' style='font-size:33px;color:dodgerblue'></i> <i class='fas fa-cloud-showers-heavy faa-passing animated' style='font-size:33px;color:dodgerblue'></i> </h1><hr><p style="text-align:center"><i class="em em-books"></i> <a href="https://www.deeplearning.ai/blog/hodl-geoffrey-hinton" style="text-decoration:none"><strong>"Read enough so you start developing intuitions and then trust your intuitions and go for it!"</strong> </a> <i class="em em-books"></i>  ​<br/>  Prof. Geoffrey Hinton, University of Toronto
 </p><div id="contents"><table id="toc" class="centerTable">
 <thead><tr><th colspan="2" class="toc-title">Contents</th></tr></thead>
 <tbody>
 <tr>
-<td><strong>Deep Learning (Deep Neural Networks)</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#dldnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Probabilistic Graphical Models</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#probgm"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Deep Learning (Deep Neural Networks)</strong>  <a href="#dldnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Probabilistic Graphical Models</strong>  <a href="#probgm"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Machine Learning Fundamentals</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#mlfund"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Natural Language Processing</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#nlpnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Machine Learning Fundamentals</strong>  <a href="#mlfund"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Natural Language Processing</strong>  <a href="#nlpnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Optimization for Machine Learning</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#opt4ml"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Automatic Speech Recognition</strong> <a href="https://deep-learning-drizzle.github.io/index.html#asrnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Optimization for Machine Learning</strong>  <a href="#opt4ml"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Automatic Speech Recognition</strong> <a href="#asrnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>General Machine Learning</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#genml"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Modern Computer Vision</strong> <a href="https://deep-learning-drizzle.github.io/index.html#cvnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>General Machine Learning</strong>  <a href="#genml"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Modern Computer Vision</strong> <a href="#cvnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Reinforcement Learning</strong>  <a href="https://deep-learning-drizzle.github.io/index.html#reinf"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Boot Camps or Summer Schools</strong> <a href="https://deep-learning-drizzle.github.io/index.html#bcss"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Reinforcement Learning</strong>  <a href="#reinf"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Boot Camps or Summer Schools</strong> <a href="#bcss"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Bayesian Deep Learning</strong> <a href="https://deep-learning-drizzle.github.io/index.html#bayesdl"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
-<td><strong>Medical Imaging</strong> <a href="https://deep-learning-drizzle.github.io/index.html#medimg"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Bayesian Deep Learning</strong> <a href="#bayesdl"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Medical Imaging</strong> <a href="#medimg"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Graph Neural Networks</strong> <a href="https://deep-learning-drizzle.github.io/index.html#graphnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i> </a></td>
-<td><strong>Bird's-eye view of Artificial Intelligence</strong> <a href="https://deep-learning-drizzle.github.io/index.html#aginn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
+<td><strong>Graph Neural Networks</strong> <a href="#graphnn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i> </a></td>
+<td><strong>Bird's-eye view of Artificial Intelligence</strong> <a href="#aginn"><i class="fas fa-circle-down toc-arrow toc-arrow-down"></i></a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 </tbody>
-</table></div><br/> <br/><hr><a href="index.html#dldnn" style="text-decoration:none"><h2>Deep Learning (Deep Neural Networks) </h2></a><table id="dldnn" style="text-decoration:none">
+</table></div><br/> <br/><hr><a href="#dldnn" style="text-decoration:none"><h2>Deep Learning (Deep Neural Networks) </h2></a><table id="dldnn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -1024,7 +1027,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#mlfund" style="text-decoration:none"><h2>Machine Learning Fundamentals </h2></a><table id="mlfund" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#mlfund" style="text-decoration:none"><h2>Machine Learning Fundamentals </h2></a><table id="mlfund" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -1253,7 +1256,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#opt4ml" style="text-decoration:none"><h2>Optimization for Machine Learning </h2></a><table id="opt4ml" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#opt4ml" style="text-decoration:none"><h2>Optimization for Machine Learning </h2></a><table id="opt4ml" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -1466,7 +1469,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#genml" style="text-decoration:none"><h2>General Machine Learning </h2></a><table id="genml" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#genml" style="text-decoration:none"><h2>General Machine Learning </h2></a><table id="genml" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2039,7 +2042,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#reinf" style="text-decoration:none"><h2>Reinforcement Learning </h2></a><table id="reinf" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#reinf" style="text-decoration:none"><h2>Reinforcement Learning </h2></a><table id="reinf" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2324,7 +2327,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#probgm" style="text-decoration:none"><h2>Probabilistic Graphical Models </h2></a><table id="probgm" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#probgm" style="text-decoration:none"><h2>Probabilistic Graphical Models </h2></a><table id="probgm" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2409,7 +2412,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#bayesdl" style="text-decoration:none"><h2>Bayesian Deep Learning </h2></a><table id="bayesdl">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#bayesdl" style="text-decoration:none"><h2>Bayesian Deep Learning </h2></a><table id="bayesdl">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2470,7 +2473,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#medimg" style="text-decoration:none"><h2>Medical Imaging </h2></a><table id="medimg" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#medimg" style="text-decoration:none"><h2>Medical Imaging </h2></a><table id="medimg" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2563,7 +2566,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#graphnn" style="text-decoration:none"><h2>Graph Neural Networks (Geometric DL) </h2></a><table id="graphnn" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#graphnn" style="text-decoration:none"><h2>Graph Neural Networks (Geometric DL) </h2></a><table id="graphnn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2728,7 +2731,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#nlpnn" style="text-decoration:none"><h2>Natural Language Processing </h2></a><table id="nlpnn" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#nlpnn" style="text-decoration:none"><h2>Natural Language Processing </h2></a><table id="nlpnn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2885,7 +2888,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#asrnn" style="text-decoration:none"><h2>Automatic Speech Recognition </h2></a><table id="asrnn" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#asrnn" style="text-decoration:none"><h2>Automatic Speech Recognition </h2></a><table id="asrnn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -2954,7 +2957,7 @@
 <td>2015-2018</td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#cvnn" style="text-decoration:none"><h2>Modern Computer Vision </h2></a><table id="cvnn" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#cvnn" style="text-decoration:none"><h2>Modern Computer Vision </h2></a><table id="cvnn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -3399,7 +3402,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#bcss" style="text-decoration:none"><h2>Boot Camps or Summer Schools </h2></a><table id="bcss" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#bcss" style="text-decoration:none"><h2>Boot Camps or Summer Schools </h2></a><table id="bcss" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -3924,7 +3927,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#aginn" style="text-decoration:none"><h2>Bird's Eye view of A(G)I </h2></a><table id="aginn" style="text-decoration:none">
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr><a href="#aginn" style="text-decoration:none"><h2>Bird's Eye view of A(G)I </h2></a><table id="aginn" style="text-decoration:none">
 <thead>
 <tr>
 <th>S.No</th>
@@ -3977,7 +3980,7 @@
 <td></td>
 </tr>
 </tbody>
-</table><a href="https://deep-learning-drizzle.github.io/index.html#contents "style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr>
+</table><a href="#contents" style="text-decoration:none"><h5>Go to Contents <i class="fas fa-circle-up toc-arrow"></i></h5></a><hr>
 <div class="github-ribbon">
    <a href="https://github.com/kmario23/deep-learning-drizzle" target="_blank" rel="noopener">Fork me on <i class="fab fa-github"></i></a>
 </div>
